@@ -1,7 +1,7 @@
 # Copyright (C) 2013 Google Inc., authors, and contributors <see AUTHORS file>
 # Licensed under http://www.apache.org/licenses/LICENSE-2.0 <see LICENSE file>
 # Created By: dan@reciprocitylabs.com
-# Maintained By: peter@reciprocitylabs.com
+# Maintained By: peter@reciprocitylabs.com, ken@reciprocitylabs.com
 
 """A module containing the workflow TaskGroupTask model."""
 
@@ -119,21 +119,21 @@ class TaskGroupTask(WithContact, Slugged, Titled, Described, RelativeTimeboxed,
       "relative_start_date": {
           "display_name": "Start",
           "mandatory": True,
-          "description": ("Enter the task stat date in the following format:\n"
+          "description": ("Enter the task start date in the following format:\n"
                           "'5/22/2015' for one time workflows\n"
                           "'3' for weekly workflows\n"
                           "'17' for monthly workflows\n"
-                          "'feb/may/aug/nov 17' for monthly workflows\n"
+                          "'feb/may/aug/nov 17' for quarterly workflows\n"
                           "'1/17' for yearly workflows"),
       },
       "relative_end_date": {
           "display_name": "End",
           "mandatory": True,
-          "description": ("Enter the task stat date in the following format:\n"
+          "description": ("Enter the task end date in the following format:\n"
                           "'5/22/2015' for one time workflows\n"
                           "'3' for weekly workflows\n"
                           "'17' for monthly workflows\n"
-                          "'feb/may/aug/nov 17' for monthly workflows\n"
+                          "'feb/may/aug/nov 17' for quarterly workflows\n"
                           "'1/17' for yearly workflows"),
       },
       "task_type": {
